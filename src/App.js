@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import Footer from "./components/footer/footer";
 import HomeScreen from "./screens/HomeScree";
-import PortfolioScreen from "./screens/PortfolioScreen";
 import AppDetailScreen from "./screens/AppDetailsScreen";
 import AppScreen from "./screens/AppScreen";
 import { useDispatch } from "react-redux";
@@ -23,7 +22,6 @@ function App(props) {
         <main>
           <Route path="/" component={HomeScreen} exact={true} />
           <Route path="/apps/:id" component={AppDetailScreen} />
-          <Route path="/portfolio" component={PortfolioScreen} />
           <Route path="/app" component={AppScreen} />
           <Route path="/website" component={WebsitesScreen} />
           <Route path="/websites/:id" component={WebsitesDetailScren} />

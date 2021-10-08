@@ -18,7 +18,7 @@ function Footer(props) {
               <HashLink to="/#services">services</HashLink>
             </p>
             <p>
-              <Link to="/portfolio">Portfolio</Link>
+              <HashLink to="/#experience">Experience</HashLink>
             </p>
             <p>
               <HashLink to="/#contact">contact me</HashLink>

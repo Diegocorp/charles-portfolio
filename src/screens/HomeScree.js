@@ -4,21 +4,10 @@ import Services from "../components/datas/servicesDatas";
 import { HomeIndustry, HomeService } from "../components/product/HomeService";
 import { Link } from "react-router-dom";
 import Header from "../components/header/header";
-import { useSelector } from "react-redux";
-import RecentApps from "../components/product/recentApps";
-import LoadingBox from "../components/boxes/LoadingBox";
-import MessageBox from "../components/boxes/MessageBox";
 import ContactForm from "../components/product/contactForm";
-import RecentWebsites from "../components/product/recentWebsite";
-import RecentDesigns from "../components/product/recentDesign";
+import Experience from "../components/product/Experience";
 
 function HomeScreen(props) {
-  const appLists = useSelector((state) => state.appLists);
-  const { loading, error, apps } = appLists;
-  const websiteList = useSelector((state) => state.websiteList);
-  const { loading: loadingweb, error: errorweb, websites } = websiteList;
-  const designsList = useSelector((state) => state.designsList);
-  const { loading: loadingDesign, error: errorDesign, designs } = designsList;
   return (
     <>
       <Header bgColor="black" />
@@ -38,10 +27,11 @@ function HomeScreen(props) {
               <div class="screenWords">
                 <h1>Hello, I'm Charles.</h1>
                 <p>
-                  A full-stack developer. Specializing in building exceptional
-                  trending mobile applications and websites. Feel free to take a
-                  look at my latest projects. Remotely available UTC−1 to UTC+8.
-                  laummassy@gmail.com
+                  I'm a Back-End developer. With 5 years of experience building
+                  software solutions with high quality standards. Feel free to
+                  take a look at my skills, projects and experience as well as
+                  contact me if you like to work with me
+                  <strong> charlesgrandedstore@gmail.com</strong>
                 </p>
                 <div class="twoMainButton">
                   <div class="buttonMain">
@@ -68,10 +58,61 @@ function HomeScreen(props) {
           </div>
         </div>
       </div>
-
+      {/* ABOUT US */}
+      <section id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="aboutMeImg py-5">
+                    <img
+                      src="images/gifs/about.svg"
+                      class="h-75 py-5"
+                      alt="about me"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="about-me">
+                    <h5>About me</h5>
+                    <div class="aboutHorizontalLine"></div>
+                    <p>
+                      I like to create things that live on the Internet, whether
+                      it's websites, applications or any need that arises in
+                      today's market. My goal is always to build products that
+                      provide seamless performance experiences for users.
+                    </p>
+                    <p>
+                      Familiarity with Back-End programming with server-side
+                      coding skills Node.js and Php Frameworks(
+                      Express.js,Laravel).
+                    </p>
+                    <p>
+                      Experience with mobile development technologies such as
+                      Xamarin, Flutter, React Native and Ionic.
+                    </p>
+                    <p>
+                      Understanding of data structure algorithms including data
+                      migration, transformation and analysis. Implementation,
+                      management and operation of scalable, highly available and
+                      fault tolerant systems on AWS.
+                    </p>
+                    <p>Excellent communication skills in English.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* SERVICES */}
       <div class="section" id="services">
-        <div class="container rows">
+        <div class="container fluid rows">
+          <h3>
+            <strong>Services</strong>{" "}
+          </h3>
+          <div class="aboutHorizontalLine m-4"></div>
           <Tabs defaultActiveKey="services" class="tab">
             <Tab class="tablinks" eventKey="services" title="Services">
               <div class="container rows">
@@ -123,51 +164,7 @@ function HomeScreen(props) {
           </Tabs>
         </div>
       </div>
-      {/* ABOUT US */}
-      <section id="about">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="aboutMeImg">
-                    <img src="images/gifs/about.jpg" alt="about me" />
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="about-me">
-                    <h5>About me</h5>
-                    <div class="aboutHorizontalLine"></div>
-                    <p>
-                      I enjoy creating things that live on the internet, whether
-                      that be websites, applications, or anything in between. My
-                      goal is to always build products that provide
-                      pixel-perfect, performance experiences.
-                    </p>
-                    <p>
-                      Familiarity with Front End High level programming such as
-                      HTML, CSS, ReactJS, XML, jQuery and JSON. Server Side
-                      coding skills Node.js and Php Frameworks(
-                      Express.js,Laravel).
-                    </p>
-                    <p>
-                      Understanding of data structure algorithms including data
-                      migration, transformation and analysis. Deploying,
-                      managing and operating scalable, highly available and
-                      fault tolerant systems on AWS.
-                    </p>
-                    <p>
-                      Excellent communication skills in both Swahili and
-                      English.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* CONTACT US */}
+      \{/* CONTACT US */}
       <div class="contactme" id="contact">
         <div class="contactOverlay">
           <div class="container">
@@ -177,46 +174,12 @@ function HomeScreen(props) {
           </div>
         </div>
       </div>
-      {/* RECENT BLOG */}
-      <div class="container" id="blogs">
+      {/* EXPERIENCE */}
+      <div class="container" id="experience">
         <div class="article">
-          <h2>Recent Work</h2>
+          <h2>Experience</h2>
           <hr />
-          <div class="rows">
-            {loading ? (
-              <LoadingBox></LoadingBox>
-            ) : error ? (
-              <MessageBox variant="danger">{error}</MessageBox>
-            ) : (
-              <>
-                {apps.slice(0, 1).map((app) => (
-                  <RecentApps key={app._id} app={app} />
-                ))}
-              </>
-            )}
-            {loadingweb ? (
-              <LoadingBox></LoadingBox>
-            ) : errorweb ? (
-              <MessageBox variant="danger">{errorweb}</MessageBox>
-            ) : (
-              <>
-                {websites.slice(0, 2).map((website) => (
-                  <RecentWebsites key={website._id} website={website} />
-                ))}
-              </>
-            )}
-            {loadingDesign ? (
-              <LoadingBox></LoadingBox>
-            ) : errorDesign ? (
-              <MessageBox variant="danger">{errorDesign}</MessageBox>
-            ) : (
-              <>
-                {designs.slice(0, 1).map((design) => (
-                  <RecentDesigns key={design._id} design={design} />
-                ))}
-              </>
-            )}
-          </div>
+          <Experience />
         </div>
       </div>
     </>

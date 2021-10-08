@@ -21,27 +21,6 @@ const Services = {
       description:
         "Progressive Web Apps, it can be said that this is a new technology for interacting with the target audience.",
     },
-    {
-      id: "4",
-      image: "/images/img6.svg",
-      title: "Cross-Platform App",
-      description:
-        "Using React Native and flutter to build single app that performs on both Android and iOS.",
-    },
-    {
-      id: "5",
-      image: "/images/img4.svg",
-      title: "UX/UI Designs",
-      description:
-        "intuitive, user-friendly products for the success of your business to create a human-friendly visual language.",
-    },
-    {
-      id: "6",
-      image: "/images/img5.svg",
-      title: "Digital Marketing",
-      description:
-        "Data-driven strategies maximize lifecycle value by align your technology and marketing execution.",
-    },
   ],
   Industry: [
     {
@@ -108,60 +87,6 @@ const Services = {
         {
           id: "4",
           name: "Xamarin Framework",
-        },
-      ],
-    },
-    {
-      id: "2",
-      image: "/images/img8.svg",
-      tile: "UX/UI Designs",
-      techs: [
-        {
-          id: "1",
-          name: "Sketch",
-        },
-        {
-          id: "2",
-          name: "Figma",
-        },
-        {
-          id: "3",
-          name: "Flinto",
-        },
-        {
-          id: "4",
-          name: "Adobe XD",
-        },
-        {
-          id: "5",
-          name: "Blender",
-        },
-      ],
-    },
-    {
-      id: "3",
-      image: "/images/img9.svg",
-      tile: "Web Development",
-      techs: [
-        {
-          id: "1",
-          name: "HTML",
-        },
-        {
-          id: "2",
-          name: "CSS",
-        },
-        {
-          id: "3",
-          name: "ReactJs",
-        },
-        {
-          id: "4",
-          name: "Jquery",
-        },
-        {
-          id: "5",
-          name: "JSON",
         },
       ],
     },

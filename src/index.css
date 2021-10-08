@@ -1044,6 +1044,7 @@ footer {
   background-color: #001517;
 }
 .footerContainer {
+  text-align: center;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1438,6 +1439,9 @@ footer {
   .footerMedias {
     width: 70%;
   }
+  .privacyPolicy {
+    font-size: 15px;
+  }
 }
 @media screen and (max-width: 500px) {
   form {
@@ -1508,6 +1512,9 @@ footer {
   }
   .footerLogo img {
     height: 60px;
+  }
+  .privacyPolicy {
+    font-size: 15px;
   }
   .tabcontent {
     width: 90%;

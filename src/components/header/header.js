@@ -31,41 +31,15 @@ function Header(props) {
             </div>
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <HashLink to="/#services">Services</HashLink>
               </li>
               <li>
-                <HashLink to="#services">Services</HashLink>
+                <HashLink to="/#contact">Contact Me</HashLink>
               </li>
               <li>
-                <HashLink to="#contact">Contact Me</HashLink>
-              </li>
-              <li>
-                <Link to="/portfolio">Portfolio</Link>
+                <HashLink to="/#experience">Experience</HashLink>
               </li>
             </ul>
-            <div class="smallMedia">
-              <a
-                href="https://www.facebook.com/Charles.mmassy.1466/"
-                target="_blank"
-              >
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="https://www.instagram.com/minahlaur/" target="_blank">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/Charlesmmassy"
-                target="_blank"
-              >
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-              <a href="https://www.behance.net/laummassy01ce" target="_blank">
-                <i class="fab fa-behance"></i>
-              </a>
-              <a href="https://github.com/Charlesmmassy" target="_blank">
-                <i class="fab fa-github-alt"></i>
-              </a>
-            </div>
             <p>
               Check out my articles, React and React Native UI components at the
               code laboratory.
@@ -81,16 +55,16 @@ function Header(props) {
           </div>
           <div class="nav2">
             <div class="menu">
-              <HashLink to="/#about">about Me</HashLink>
+              <HashLink to="/#about">About Me</HashLink>
             </div>
             <div class="menu">
-              <HashLink to="/#services">services</HashLink>
+              <HashLink to="/#services">Services</HashLink>
             </div>
             <div class="menu">
-              <Link to="/portfolio">Portfolio</Link>
+              <HashLink to="/#experience">Experience</HashLink>
             </div>
             <div class="menu">
-              <HashLink to="/#contact">contact Me</HashLink>
+              <HashLink to="/#contact">Contact Me</HashLink>
             </div>
           </div>
           {/* open */}
