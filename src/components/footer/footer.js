@@ -25,7 +25,7 @@ function Footer(props) {
             </p>
           </div>
           <span>
-            Privacy Policy | © 2021 Charles Granded. All Rights Reserved.
+            Privacy Policy | © 2020 Charles Granded. All Rights Reserved.
           </span>
           <br />
           <span>
