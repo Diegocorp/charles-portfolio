@@ -10,6 +10,8 @@ import WebsitesScreen from "./screens/WebsitesScreen";
 import WebsitesDetailScren from "./screens/websitesDetailsScreen";
 import DesignsDetailScreen from "./screens/designDetailsScreen";
 
+//team slide
+
 function App(props) {
   const dispatch = useDispatch();
   useEffect(() => {
