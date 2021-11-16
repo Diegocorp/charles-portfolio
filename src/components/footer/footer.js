@@ -31,7 +31,7 @@ function Footer(props) {
           <span>
             Developed by
             <strong>
-              <a href="https://diegocorp.github.io/"> Diego Sandoval</a>
+              <a href="https://www.diegosandoval.tech/" target="_blank"> Diego Sandoval</a>
             </strong>{" "}
             <a href="https://github.com/Diegocorp">
               <i class="fab fa-github-square ml-1"></i>
